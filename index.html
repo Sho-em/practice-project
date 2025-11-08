@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
+</head>
+<body>
+    <div class="outer-Box" id="outerBox">
+    <div class="inside-Box" id="insideBox">
+        <div class="nameDiv">
+            <label for="nameField">Full Name</label><br>
+            <input type="text" id="nameField" placeholder="Enter Name">
+            <span class="error-Msg" id="errorName"></span>
+        </div>
+        <div class="emailDiv">
+            <label for="emailField">E-mail</label><br>
+            <input type="email" id="emailField" placeholder="example@fake.com">
+            <span class="error-Msg" id="errorEmail"></span>
+        </div>
+
+        <div class="passwordDiv">
+            <label for="passField">Enter Password</label><br>
+            <input id="passField" type="password" placeholder="Enter Password">
+            <i id="eyeIcon" class='bx bxs-hide'></i>
+            <span class="error-Msg" id="errorPass"></span>
+        </div>
+
+        <div class="passwordDiv">
+            <label for="passField2">Confirm Password</label><br>
+            <input id="passField2" type="password" placeholder="Confirm Password">
+            <i id="eyeIcon2" class='bx bxs-hide'></i>
+            <span class="error-Msg" id="errorPass2"></span>
+        </div>
+        <div class="btnDiv">
+            <button onclick="updateProfile()" id="updateBtn">Update Profile</button>
+        </div>
+        <audio src="tone.wav" type="audio/wav" id="audioSound"></audio>
+    
+    </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

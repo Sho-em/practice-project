@@ -1,0 +1,155 @@
+.outer-Box{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.inside-Box{
+    padding : 15px;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 15px;
+    width: 600px;
+    height: 510px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nameDiv{
+    padding: 20px 0;
+    
+}
+
+.nameDiv label{
+    font-size: 20px;
+    
+}
+
+.nameDiv input{
+    margin-top: 10px;
+    padding: 9px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    
+}
+input:focus{
+    outline: none;
+}
+
+
+.emailDiv{
+    padding: 20px 0;
+}
+
+.emailDiv label{
+    font-size: 20px;
+}
+
+.emailDiv input{
+    margin-top: 10px;
+    padding: 9px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.error-Msg{
+    font-size: 12px;
+    display: none;
+    color: red;
+    position: absolute;
+}
+
+.error-Msg.show{
+    display: block;
+}
+
+.passwordDiv{
+    padding: 20px 0;
+    position: relative;
+}
+
+.passwordDiv label{
+    font-size: 20px;
+}
+
+.passwordDiv input{
+    margin-top: 10px;
+    padding: 9px 20px;
+    padding-right: 40px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+#eyeIcon{
+    position: absolute;
+    top: 54%;
+    left: 220px;
+    font-size: 25px;
+    cursor: pointer;
+
+}
+
+#eyeIcon2{
+    position: absolute;
+    top: 60px;
+    left: 222px;
+    font-size: 25px;
+    cursor: pointer;
+    
+}
+
+.btnDiv{
+    padding: 20px 20px;
+}
+
+#updateBtn{
+    padding: 20px 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    font-size: 16px;
+}
+
+.nameDiv input.error{
+    border: 2px solid red;
+}
+.emailDiv input.error{
+    border: 2px solid red;
+}
+
+.passwordDiv input.error{
+    border: 2px solid red;
+}
+
+.toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 24px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    display: none;
+    z-index: 1000;
+    animation: slideIn 0.3s ease;
+}
+
+.toast.show {
+    display: block;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
